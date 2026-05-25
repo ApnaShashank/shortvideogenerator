@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import { Input, Upload, Settings, Send } from 'lucide-react'
+import { FileText, Upload, Settings, Send } from 'lucide-react'
 
 const steps = [
   {
