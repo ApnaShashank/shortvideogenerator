@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4 flex items-center gap-2">
               <Sparkles className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">VidMaxx</span>
+              <span className="text-xl font-bold">LyricsFlow AI</span>
             </div>
             <p className="mb-6 max-w-md text-muted-foreground">
-              AI-powered video generation and scheduling platform for creators and businesses. 
+              AI-powered lyrics reel generation and scheduling platform for creators and businesses. 
               Create once, publish everywhere.
             </p>
             <div className="flex gap-4">
@@ -69,9 +69,9 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} VidMaxx. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} LyricsFlow AI. All rights reserved.</p>
           <p className="mt-2">
-            AI Short Video Generator and Scheduler for YouTube, Instagram, TikTok and Email
+            AI Lyrics Reel Generator and Scheduler for YouTube, Instagram, TikTok and Shorts
           </p>
         </div>
       </div>

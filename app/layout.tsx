@@ -5,10 +5,13 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+import { ClerkProvider } from '@clerk/nextjs'
+
 export const metadata: Metadata = {
-  title: 'VidMaxx - AI Short Video Generator',
-  description: 'Create & Schedule AI Short Videos in Minutes. Automate your content creation for YouTube, Instagram, TikTok, and Email.',
+  title: 'LyricsFlow AI - AI Lyrics Reel Generator',
+  description: 'Create & Schedule AI Lyrics Reels in Minutes. Automate your content creation for YouTube, Instagram, TikTok, and Shorts.',
 }
+
 
 export default function RootLayout({
   children,
@@ -16,12 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <main>
-          {children}
-        </main>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
+        <ClerkProvider>
+          <Navbar />
+          <main>
+            {children}
+          </main>
+        </ClerkProvider>
       </body>
     </html>
   )

@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkles, Video } from 'lucide-react'
 import Link from 'next/link'
+import { SignInButton, SignedIn, SignedOut } from '@clerk/nextjs'
 
 export default function HeroSection() {
   return (
@@ -19,17 +20,29 @@ export default function HeroSection() {
           </h1>
           
           <p className="mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl">
-            VidMaxx is your all-in-one AI video generator and scheduler for YouTube, 
-            Instagram, TikTok, and Email. Automate your content creation with intelligent scheduling.
+            LyricsFlow AI is your all-in-one AI lyrics reel generator and scheduler for YouTube, 
+            Instagram, TikTok, and Shorts. Automate your content creation with intelligent scheduling.
           </p>
+
           
           <div className="flex flex-col gap-4 sm:flex-row">
-            <Button size="lg" asChild>
-              <Link href="/signup" className="gap-2">
-                Start Free Trial
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
+            <SignedOut>
+              <SignInButton mode="modal">
+                <Button size="lg" className="gap-2">
+                  Start Free Trial
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <Button size="lg" asChild>
+                <Link href="/dashboard" className="gap-2">
+                  Go to Dashboard
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+            </SignedIn>
+            
             <Button size="lg" variant="outline" asChild>
               <Link href="/demo" className="gap-2">
                 <Video className="h-4 w-4" />
