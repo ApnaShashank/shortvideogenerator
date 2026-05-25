@@ -12,7 +12,7 @@ export default function CTA() {
               Ready to Transform Your Video Content?
             </h2>
             <p className="mb-8 text-lg text-muted-foreground">
-              Join thousands of creators and marketers using VidMaxx
+              Join thousands of creators and marketers using LyricsFlow AI
             </p>
             
             <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">

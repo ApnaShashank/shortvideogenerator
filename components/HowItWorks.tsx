@@ -34,8 +34,9 @@ export default function HowItWorks() {
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            How VidMaxx Works
+            How LyricsFlow AI Works
           </h2>
+
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Four simple steps from idea to published video
           </p>
